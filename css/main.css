@@ -1,10 +1,74 @@
-/******************************************************************************
- * WATS1010: Introduction to Web Development
- * Embedded Media Assignment
- *
- * Site Styles
- *****************************************************************************/
+/* Main CSS file */
+html {
+padding: 0;
+}
+body {
+font-family: Areal, Helvetica, Sanserif; size: 12:px;
+margin-top:0;
+}
+header {
+ height: 400px; 
+  background-image: URL(../img/monkey_flight.jpg);
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+}
 
- html {
-     color: green;
- }
+section {
+width: 960px;
+}
+nav {
+
+}
+.main-nav {
+font-weight: bold; 
+}
+.main-nav li {
+ background-color: none; display: inline; padding: .2em 1em; 
+}
+.main-nav li a{
+color: white; text-decoration: none;
+}
+
+
+
+#social {
+background: pink;
+position: absolute;
+top: 50px;
+right: 0;
+width: 25px;
+transition: 2s width;
+}
+#social:hover {
+width: 250px;
+}
+#social ul {
+list-style-type: none;
+padding: 0;
+}
+#social li {
+margin: 0;
+padding: 0;
+}
+h1 {
+size: 24px; color: pink;
+}
+.download-button {
+font-weight: bold;
+}
+ul {
+width: 100%; 
+}
+.weybec-people li{
+ display: inline; float: left; padding: 1em; margin-bottom: 10px;
+}
+.weybec-people img{
+max-width: 200px; 
+}
+
+footer {
+height: 200px; padding-top: 20px;
+background-image: URL(../img/monkaa_title.jpg);
+margin-bottom: 0;
+}
