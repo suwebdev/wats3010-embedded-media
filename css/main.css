@@ -5,6 +5,494 @@
  * Site Styles
  *****************************************************************************/
 
- html {
-     color: green;
- }
+
+/* add block high level capatibility text */
+
+/* add reset */
+
+/* add ??? */
+
+/* add ? fix */
+
+/* use box?? */
+
+
+
+/* =============================== */
+/* -- MAIN PAGE setup/params   -- */
+/* ============================= */
+html {
+    height: 100%;
+    background-color: floralwhite;
+}
+
+.clearfix {
+    overflow: auto;
+    zoom: 1;
+}
+
+/* -- init margins, paddings, sizing ----*/
+body, header, nav, main, content, article, aside, section, footer, figure, figurecaption {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li, div {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.125rem;
+}
+h4 {
+    font-size: 0.844rem;
+}
+h5 {
+    font-size: 0.633rem;
+}
+h6 {
+    font-size: 0.475rem;
+}
+p, normal {
+    font-size: 1rem;
+}
+ul, a {
+    font-size: 0.7rem;
+}
+
+body {
+ 
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+/* width: 80%; */
+	background-color: paleturquoise;
+	overflow-x: hidden;
+}
+
+
+/* ============================== */
+/* -- HEADER                  -- */
+/* ============================ */
+/* header */
+header {
+    
+    z-index: 100;
+    /* 
+    background-color: burlywood;
+    border: 4px solid red;
+    box-sizing: border-box;
+    */
+    
+    background-color: white;
+    background-color: transparent;
+    background-color: white;
+    
+    
+ height: 30px; 
+    margin:  5px 0 5px 0;
+    
+    position: fixed; 
+    
+    height: 100px;
+    width: 100%;
+    
+    /*
+    background-image: url(../media/video/loop_poster.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1080px;
+    background-position: ;
+    background-origin: content-box;
+    */
+}
+
+#loop {
+    
+    
+        /* 
+    background-color: burlywood;
+    border: 4px solid red;
+    box-sizing: border-box;
+    */
+    
+       border: 4px solid red;
+    z-index: 10;
+    
+    
+    /*
+    position: absolute;
+    */
+    
+    
+    position:relative;
+    top: 120px;
+    
+    position: sticky;
+    
+    background-color: green;
+    width: 100%;
+    height: 100px;
+    background-image: url(../media/video/loop_poster.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+   /* background-size: 960px 550px;*/
+    height: 400px;
+    background-origin: content-box;
+    /*
+    position: absolute;
+    top: 150px;
+    
+    background-color: green;
+    width: 100%;
+    height: 100px;
+    
+    background-image: url(../media/video/loop_poster.png);
+    
+    height: 1080px;
+    
+    */
+    
+    /*
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1080px;
+    background-position: ;
+    background-origin: content-box;
+    */
+    
+}
+
+header h1 {
+  
+    
+    font-family: serif;
+    font-size: 20px;
+    font-weight: 300;
+    border-left: 1px solid gray;
+    width: 100px;
+
+    padding: 0px 0px 0px 8px;
+    margin-top: 10px;
+    margin-left: 50px;
+    
+    
+    /*
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    
+    font-family: serif;
+    font-size: 20px;
+    font-weight: 300;
+    border-left: 2px solid gray;
+    width: 100px;
+
+    padding: 10px 10px 10px 30px;
+    */
+    
+}
+
+header p {
+ 
+  
+    
+    
+}
+/* ----------------------------- */
+/* -- NAVs                   -- */
+/* --------------------------- */
+/* header : nav */
+
+nav {
+    background-color: navajowhite;
+    
+
+}
+
+.nav-top {
+    
+    position: absolute;
+    top: 10px;
+    left:  200px;
+       
+}
+
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    /*
+    position: absolute:
+    top: 0px;
+    left:  150px;
+    */
+    
+    
+}
+
+nav li {
+    
+    /*
+    margin-left: 40px;
+    height: 5px;
+    padding: 10px 5px 20px 50px;
+    */
+    /* margin: 0 auto; */
+   
+    text-transform: uppercase;
+    color: #000;
+   /* font-size: 100%; doesnt do anything */
+    font-weight: 900;
+}
+
+   
+
+nav li a:link,
+nav li a:visited {
+    font-size: 70%;
+    
+    /* border-bottom: 2px solid transparent; */
+    transition: border-bottom 0.2s;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    border-radius: 25px;
+    padding: 2px 10px;  
+    background-color: transparent;
+   /* 
+    opacity: 0.6; 
+    background-color: gainsboro;     
+    transition: font-weight 0.2s;
+    transition: opacity 0.2s;
+    transition: background-color 0.1s;
+    */
+    
+
+
+}
+    
+nav li a:hover,
+nav li a:active {
+    font-weight: 400;
+    background-color: #ebf2f5;
+    /*
+    opacity: 1.0;	
+	border-bottom: 1px solid #000; 
+    */
+}
+	
+
+
+/*
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    text-decoration: none;
+    color: #000;
+}
+    
+.main-nav li a:hover,
+.main-nav li a:active {
+	opacity: 0.6;	
+	border-bottom: 1px solid #000;
+}
+	 
+*/    
+ 
+
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+/* ============================== */
+/* -- ASIDE                   -- */
+/* ============================ */
+/* header : aside */
+aside {
+    
+    /* social is moved absolutely to the top header, this means the social items move */
+    
+    /*
+    background-color: red;
+    border: 4px solid blue;
+    box-sizing: border-box;    
+    */
+    z-index: 101;
+    
+    position: fixed;
+    top: 10px;
+    left: 350px;
+    display: inline-block;
+    width: 50px;
+    
+}
+
+
+/* ----------------------------- */
+/* -- SHAREs                 -- */
+/* --------------------------- */
+/* aside : #social : .social-links */
+
+#social {
+    
+ 
+    /*
+    position: absolute;
+    top: 10px;
+    left: 400px;
+    display: inline-block;
+    */
+
+}
+
+#social h2 {
+    
+    /*
+    font-size: 50%;
+    display: none;
+    */
+    
+    /* hide word 'share this' */
+    /*
+    display: none;
+    */
+    font-size: 0.7rem;  /* use same as watch */
+    text-indent: 100%; 
+    white-space: nowrap;
+    overflow: hidden;
+    
+    /*
+     text-indent: 100%;
+     white-space: nowrap;
+     overflow: hidden;
+    */
+}
+
+.social-links {
+    
+    background-color: aqua;
+    background-color: white;
+    position: absolute;
+    top: 0px;  /* rel 2 #social */
+    left: 100px;
+    width: 200px;
+    
+}
+
+.social-links li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 10px;
+}
+    
+
+
+/* ============================== */
+/* -- SECTION - WATCH         -- */
+/* ============================ */
+/* section#watch */
+#watch {
+    
+    padding-top: 150px; 
+    
+    /* top: 1000px; */
+    
+    position: relative;
+    
+    /*
+    top: 400px;
+    padding-top: 100px; */
+    
+    
+    
+    background-color: lightpink;
+    border: 4px solid green;
+    box-sizing: border-box;    
+    
+}
+
+
+
+/* ============================== */
+/* -- SECTION - LISTEN        -- */
+/* ============================ */
+/* section#listen */
+#listen {
+    position: relative;
+    background-color: lavender;
+    border: 4px solid brown;
+    box-sizing: border-box;    
+    
+}
+
+
+
+/* ============================== */
+/* -- SECTION - ABOUT         -- */
+/* ============================ */
+/* section#about */
+#about {
+    position: relative;
+    background-color: palegreen;
+    border: 4px solid blue;
+    box-sizing: border-box;    
+    
+}
+
+
+
+/* section#about.lead */
+
+
+/* section#about.weybec-people */
+/* section#about.weybec-people.headshot */
+
+
+
+/* ============================== */
+/* -- FOOTER                  -- */
+/* ============================ */
+footer {
+    background-color: yellow;
+    border: 4px solid gold;
+    box-sizing: border-box;    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

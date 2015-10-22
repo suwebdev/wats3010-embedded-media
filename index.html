@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
     <head>
@@ -10,6 +11,14 @@
         <!-- TODO: Make a favicon that better represents the page. -->
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="css/main.css">
+        
+        <!-- =========================== --
+         !--  ty added these:            -->
+        	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <!-- --------------------------- --> 
+        
+        
     </head>
 
     <body>
@@ -22,17 +31,51 @@
                  insert backgrounds and other images into the page. Balance
                  image quality with file size to achieve the best user
                  experience. -->
+                 
+
+                 
+                 
             <h1>Monkaa</h1>
             <p class="subtitle">An open source short film</p>
             <nav>
-                <ul class="main-nav">
+                <ul class="nav-top">
                     <li><a href="#watch">Watch</a></li>
                     <li><a href="#listen">Listen</a></li>
                     <li><a href="#about">About</a></li>
                 </ul>
             </nav>
+            
+
         </header>
 
+        <div id="loop">
+           
+           
+    /*
+            <video width="320" height="240" controls loop>
+               
+                <source src="media/video/flying_monkey_loop.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+           
+           
+    */
+           <!--
+           
+           
+            <video controls loop>
+               
+               <video width="320" height="240" controls>
+               
+                <source src="media/video/flying_monkey_loop.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        -->
+        
+        </div>
+       
         <aside id="social">
             <!-- TODO: Experiment with different ways of making this set of
                  share links stand out and stay near the user all the time.
@@ -110,7 +153,7 @@
         <footer><!-- TODO: Style the footer appropriately. -->
             <p>This page was created and designed by WEBDEV BEV in 2015. <i>Monkaa</i> was created by <a href="http://www.weybec.com/">Weybec</a> and is used here under a CC-BY license.</p>
             <nav>
-                <ul class="main-nav">
+                <ul class="nav-bottom">
                     <li><a href="#watch">Watch</a></li>
                     <li><a href="#listen">Listen</a></li>
                     <li><a href="#about">About</a></li>
