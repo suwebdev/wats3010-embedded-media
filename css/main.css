@@ -5,6 +5,475 @@
  * Site Styles
  *****************************************************************************/
 
- html {
-     color: green;
- }
+
+/* =============================== */
+/* -- MAIN PAGE setup/params   -- */
+/* ============================= */
+
+html {
+    height: 100%;
+    background-color: floralwhite;
+}
+
+.clearfix {
+    overflow: auto;
+    zoom: 1;
+}
+
+
+/* -- init margins, paddings, sizing ----*/
+
+body,
+header,
+nav,
+main,
+content,
+article,
+aside,
+section,
+footer,
+figure,
+figurecaption {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+h4 {
+    font-size: 0.844rem;
+}
+
+h5 {
+    font-size: 0.633rem;
+}
+
+h6 {
+    font-size: 0.475rem;
+}
+
+p,
+normal,
+i,
+a,
+tr {
+    font-size: 1rem;
+}
+
+ul {
+    font-size: 0.7rem;
+}
+
+p {
+    line-height: 1.4;
+}
+
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+
+/* ============================== */
+/* -- HEADER                  -- */
+/* ============================ */
+
+/* header */
+
+header {
+    z-index: 100;
+
+    background-color: #fff;
+    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 0 3px 3px #b2b2b2;
+    height: 30px;
+    margin: 0 0 0 0;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-image: url(../images/monkaa_56px.png);
+    background-repeat: no-repeat;
+    background-size: 56px 56px;
+    height: 64px;
+    background-origin: content-box;
+}
+
+.header-text {
+    border-left: 1px solid gray;
+    width: 100px;
+    padding: 1px;
+    background-color: transparent;
+    margin: 12px 0 8px 60px;
+    height: 38px;
+}
+
+header p {
+    font-size: 0.8rem;
+    position: absolute;
+    left: 80px;
+}
+
+.loop-container {
+    width: 100%;
+    position: fixed;
+    opacity: 1;
+}
+
+#loop {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 960px;
+    height: 607px;
+    margin: 0 auto;
+    z-index: 10;
+    padding-top: 67px;
+    background-color: transparent;
+    padding-bottom: 0;
+}
+
+header h1 {
+    font-family: serif;
+    font-size: 20px;
+    font-weight: 300;
+    width: 100px;
+    padding: 0 0 0 15px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+/* ----------------------------- */
+/* -- NAVs                   -- */
+/* --------------------------- */
+
+/* header : nav */
+
+.nav-bottom {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+.nav-top {
+    position: absolute;
+    top: 25px;
+    left: 300px;
+    font-size: 13px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+nav li a:link,
+nav li a:visited {
+    font-size: 120%;
+    transition: border-bottom 0.2s;
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    border-radius: 25px;
+    padding: 3px 11px;
+    background-color: transparent;
+    transition: background-color 0.2s;
+}
+
+nav li a:hover,
+nav li a:active {
+    font-weight: 400;
+}
+
+.nav-top li a:hover,
+.nav-top li a:active {
+    background-color: #ebf2f5
+}
+
+.nav-bottom li a:hover,
+.nav-bottom li a:active {
+    background-color: #fff
+}
+
+
+/* ============================== */
+/* -- ASIDE                   -- */
+/* ============================ */
+
+/* header : aside */
+
+aside {
+    z-index: 101;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    width: 10px;
+}
+
+
+/* ----------------------------- */
+/* -- SHAREs                 -- */
+/* --------------------------- */
+/* aside : #social : .social-links */
+
+#social {}
+
+#social h2 {
+    font-size: 0.7rem;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.social-links {
+    background-color: #fff;
+    position: absolute;
+    top: 5px;
+    /* rel 2 #social */
+    left: 760px;
+    width: 300px;
+    height: 35px;
+    vertical-align: middle;
+    list-style: none;
+    display: inline-block;
+    padding-left: 4px;
+    margin: 2px 2px;
+    overflow: auto;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 10;
+    margin-left: 0px;
+    vertical-align: middle;
+}
+
+aside ul li a i {
+    font-size: 30px;
+    font-size: 1.25rem;
+    transition: all 0.2s ease-in-out;
+    padding: 1px;
+    margin: 10px
+}
+
+.fa-envelope {
+    color: #000;
+    opacity: 0.75;
+    vertical-align: middle;
+}
+
+.fa-facebook {
+    color: #3b5998;
+    opacity: 0.75;
+    vertical-align: middle;
+}
+
+.fa-pinterest {
+    color: #cb2027;
+    opacity: 0.75;
+    vertical-align: middle;
+}
+
+.fa-twitter {
+    color: #00aced;
+    opacity: 0.75;
+    vertical-align: middle;
+}
+
+.fa-google-plus {
+    color: #d34836;
+    opacity: 0.75;
+    vertical-align: middle;
+}
+
+.fa-instagram {
+    color: #b77061;
+    opacity: 0.75;
+    vertical-align: middle;
+}
+
+.fa-envelope:hover {
+    opacity: 1.0;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.fa-facebook:hover {
+    opacity: 1.0;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.fa-twitter:hover {
+    opacity: 1.0;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.fa-pinterest:hover {
+    opacity: 1.0;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.fa-google-plus:hover {
+    opacity: 1.0;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.fa-instagram:hover {
+    opacity: 1.0;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+
+/* ============================== */
+/* -- SECTION - WATCH         -- */
+/* ============================ */
+
+
+/* section#watch */
+
+#watch,
+#listen,
+#about,
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.watch-video {
+    padding: 30px 0 30px 0;
+}
+
+#watch {
+    padding: 30px;
+    background-color: ghostwhite;
+}
+
+
+/* ============================== */
+/* -- SECTION - LISTEN        -- */
+/* ============================ */
+
+/* section#listen */
+
+.listen-audio {
+    padding: 30px 0 30px 0;
+}
+
+#listen {
+    padding: 30px;
+    background-color: #ecf0f1;
+}
+
+.fa-download {
+    opacity: 0.8;
+    font-size: 1.75rem;
+    vertical-align: middle;
+    color: #030b1e;
+}
+
+.download-buttons {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.download-buttons td {}
+
+
+/* ============================== */
+/* -- SECTION - ABOUT         -- */
+/* ============================ */
+
+/* section#about */
+
+#about {
+    padding: 30px;
+    background-color: ghostwhite;
+}
+
+.weybec-people {
+    padding: 30px;
+    display: inline-block;
+    width: 800px;
+}
+
+.weybec-people li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 30px 0 30px;
+    text-align: center;
+    margin: auto 0;
+}
+
+.headshot {
+    width: 200px;
+    border-radius: 100px;
+}
+
+.lead-text {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.about-text {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+/* ============================== */
+/* -- FOOTER                  -- */
+/* ============================ */
+
+footer {
+    padding: 15px 30px 30px 30px;
+    background-color: #ecf0f1;
+    border-top: 2px solid gray;
+    box-sizing: border-box;
+}
+
+footer p {
+    padding-top: 8px;
+}
