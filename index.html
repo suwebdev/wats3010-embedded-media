@@ -1,175 +1,186 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Monkaa: Watch and Download the animated short film</title>
-        <meta name="description" content="Monkaa is a blue-furred, pink-faced monkey who consumes a crystallized meteorite, making him invincibly strong and too hot to handle. Watch and download the animated short film here--for free!">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- TODO: Make a favicon that better represents the page. -->
-        <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="css/main.css">
-        
-        <!-- =========================== --
-         !--  ty added these:            -->
-        	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <!-- --------------------------- --> 
-        
-        
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Monkaa: Watch and Download the animated short film</title>
+    <meta name="description" content="Monkaa is a blue-furred, pink-faced monkey who consumes a crystallized meteorite, making him invincibly strong and too hot to handle. Watch and download the animated short film here--for free!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <body>
-        
-        
-        
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
 
-        <header>
-            <!-- TODO: Create an elegant header using either one of the images
-                 or the video loop included in this repository. Make sure the
-                 page navigation is presented clearly and in a user-friendly
-                 way. Also, be sure to choose the proper image format as you
-                 insert backgrounds and other images into the page. Balance
-                 image quality with file size to achieve the best user
-                 experience. -->
-                 
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-                 
-                 
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png" />
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-text11">
             <h1>Monkaa</h1>
             <p class="subtitle">An open source short film</p>
-            <nav>
-                <ul class="nav-top">
-                    <li><a href="#watch">Watch</a></li>
-                    <li><a href="#listen">Listen</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
-            
-        
-        
-            
-        </header>
-
-        <div id="loop">
-           
-           
-    <!-- 
-       <video width="320" height="240" controls loop1>  -->
-            
-       
-            
-            
-      <video width=100% height=auto controls autoplay loop>  
-          
-                <source src="media/video/flying_monkey_loop.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
-                Your browser does not support the video tag.
-            </video>
-           
-    
-           <!--
-           
-           
-            <video controls loop>
-               
-               <video width="320" height="240" controls>
-               
-                <source src="media/video/flying_monkey_loop.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
-                Your browser does not support the video tag.
-            </video>
-        -->
-        
         </div>
-       
-        <aside id="social">
-            <!-- TODO: Experiment with different ways of making this set of
-                 share links stand out and stay near the user all the time.
-                 Try using 'absolute', 'fixed', or even 'sticky' positioning
-                 to achieve a user-friendly effect. You may also use the
-                 `:hover` pseudoselector to trigger height or width changes
-                 that could help you make a more interactive design. -->
-            <h2>Share</h2>
-            <ul class="social-links">
-                <li class="twitter"><a href="http://twitter.com">Twitter</a></li>
-                <li class="facebook"><a href="http://facebook.com">Facebook</a></li>
-                <li class="instagram"><a href="http://instagram.com">Instagram</a></li>
+        <nav>
+            <ul class="nav-top">
+                <li><a href="#watch">Watch</a></li>
+                <li><a href="#listen">Listen</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
-        </aside>
+        </nav>
+    </header>
 
-        <section id="watch">
-            <h2>Watch</h2>
-            <!-- TODO: Embed the .webm and .mp4 video with full controls for a
-                 convenient and attractive video viewing experience. -->
+    <div id="loop">
+        <div class "loop-container"></div>
+            <video width=100% height=auto autoplay loop>
+                <source src="media/video/flying_monkey_loop_1way.mp4" type="video/mp4"> Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
 
-            <!-- TODO: Style an elegant download link to download the video. -->
-            <h3>Download the video</h3>
-            <p>
-                Click below to download either MP4 or WEBM versions of this video.
-                <br>
-                <a class="download-button" href="media/video/monkaa_1080p.mp4">.MP4 Version</a>
-                <a class="download-button" href="media/video/monkaa_1080p.webm">.WEBM Version</a>
-            </p>
-        </section>
+    <aside id="social">
+        <h2>Share</h2>
+        <ul class="social-links">
+            <li><a href="mailto:?subject=Monkaa - An open source short film"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="http://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="http://pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+            <li><a href="http://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
+            <li><a href="http://instagram.com/" target="_blank"><i class="fa fa-instagram"></i> </a></li>
+        </ul>
+    </aside>
 
-        <section id="listen">
-            <h2>Listen</h2>
-            <!-- TODO: Embed an audio player so users can play back the
-                 soundtrack MP3 directly on the page. -->
+    <div class="share">
+    </div>
 
-            <!-- TODO: Style an elegant download link to download the video. -->
-            <p>
-                <a class="download-button" href="media/audio/monkaa_soundtrack.mp3">Download as MP3</a>
-            </p>
-        </section>
+    <section id="watch">
+        <h2>Watch</h2>
+        <video class="watch-video" width="50%" height="auto" controls>
+            <source src="media/video/monkaa_1080p_39p5Mb.mp4" type="video/mp4">
+            <source src="media/video/monkaa_1080p_71Mb.webm" type="video/webm">
+            <source src="media/video/monkaa_1080p_83p4Mb.ogv" type="video/ogg"> Your browser does not support the video tag.
+        </video>
+        <h3>Download the video</h3>
+        <p>
+            Click below to download either MP4, WEBM, or OBB versions of this video.
+        </p>
+        <table class="download-buttons">
+            <tr>
+                <th>Download</th>
+                <th>Format</th>
+                <th>Pixels</th>
+                <th>File Size</th>
+            </tr>
+            <tr>
+                <td><a href="/media/video/monkaa_1080p_47p1Mb.mp4" download="Monkaa.mp4"><i class="fa fa-download"></i></a> </td>
+                <td>MP4</td>
+                <td>1080</td>
+                <td>47Mb</td>
+            </tr>
+            <tr>
+                <td><a href="/media/video/monkaa_1080p_39p5Mb.mp4" download="Monkaa.mp4"><i class="fa fa-download"></i></a> </td>
+                <td>MP4</td>
+                <td>1080</td>
+                <td>39Mb</td>
+            </tr>
+            <tr>
+                <td><a href="/media/video/monkaa_360p_27p7Mb.mp4" download="Monkaa.mp4"><i class="fa fa-download"></i></a> </td>
+                <td>MP4</td>
+                <td>360</td>
+                <td>27Mb</td>
+            </tr>
+            <tr>
+                <td><a href="/media/video/monkaa_1080p_71Mb.webm" download="Monkaa.webm"><i class="fa fa-download"></i></a> </td>
+                <td>WEBM</td>
+                <td>1080</td>
+                <td>71Mb</td>
+            </tr>
+            <tr>
+                <td><a href="/media/video/monkaa_1080p_83p4Mb.ogv" download="Monkaa.ogv"><i class="fa fa-download"></i></a> </td>
+                <td>OBB</td>
+                <td>1080</td>
+                <td>83Mb</td>
+            </tr>
+        </table>
+    </section>
 
-        <section id="about">
-            <!-- TODO: Style this text so it is comfortable to read and nice
-                 to look at. Style the "lead" paragraph to be more eye-catching
-                 so that text stands out. -->
-            <h2>About</h2>
-            <p class="lead">Monkaa is a blue-furred, pink-faced monkey who consumes a crystallized meteorite, making him invincibly strong and too hot to handle. Exploring his new superpowers, Monkaa zooms through an entire universe. </p>
+    <section id="listen">
+        <h2>Listen</h2>
 
-            <ul class="weybec-people">
-                <!-- TODO: You must choose the proper image format to use for
-                     each headshot below. Images are located in the
-                     ``img/weybec/`` directory. -->
-                <li>
-                    <img class="headshot" src="TODO" alt="Pratik Solanki headshot"><br>
-                    Pratik Solanki<br>
-                    Co-Founder
-                </li>
-                <li>
-                    <img class="headshot" src="TODO" alt="Nita Ravalji headshot"><br>
-                    Nita Ravalji<br>
-                    Co-Founder
-                </li>
-                <li>
-                    <img class="headshot" src="TODO" alt="Niyal Parmar headshot"><br>
-                    Niyal Parmar<br>
-                    Co-Founder
-                </li>
-            </ul>
+        <audio class="listen-audio" controls>
+            <source src="media/audio/monkaa_soundtrack" type="audio/ogg">
+            <source src="media/audio/monkaa_soundtrack.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+        </audio>
+        <h3>Download the audio</h3>
+        <p>
+            Click below to download either MP3 or OBB versions of this audio track.
+        </p>
+        <table class="download-buttons">
+            <tr>
+                <th>Download</th>
+                <th>Format</th>
+                <th>File Size</th>
+            </tr>
+            <tr>
+                <td><a href="audio/monkaa_soundtrack.mp3" download="Monkaa.mp3"><i class="fa fa-download"></i></a> </td>
+                <td>MP3</td>
+                <td>2.8Mb</td>
+            </tr>
+            <tr>
+                <td><a href="audio/monkaa_soundtrack.ogg" download="Monkaa.ogg"><i class="fa fa-download"></i></a> </td>
+                <td>OGG</td>
+                <td>1.6Mb</td>
+            </tr>
+        </table>
+    </section>
 
+    <section id="about">
+        <h2>About</h2>
+        <p class="lead-text">Monkaa is a blue-furred, pink-faced monkey who consumes a crystallized meteorite, making him invincibly strong and too hot to handle. Exploring his new superpowers, Monkaa zooms through an entire universe. </p>
+        <ul class="weybec-people">
+            <li>
+                <img class="headshot" src="./images/weybec/pratik_solanki.jpg" alt="Pratik Solanki headshot">
+                <br> Pratik Solanki
+                <br> Co-Founder
+            </li>
+            <li>
+                <img class="headshot" src="./images/weybec/Nita-ravalji1.jpg" alt="Nita Ravalji headshot">
+                <br> Nita Ravalji
+                <br> Co-Founder
+            </li>
+            <li>
+                <img class="headshot" src="./images/weybec/niyal_parmar.jpg" alt="Niyal Parmar headshot">
+                <br> Niyal Parmar
+                <br> Co-Founder
+            </li>
+        </ul>
+
+        <div class="about-text">
             <p>Monkaa is produced by <a href="http://www.weybec.com/">Weybec</a>, an animation studio located in Mumbai, India and founded by Pratik Solanki, Nita Ravalji and Niyal Parmar.</p>
-
             <p>Project Monkaa is a 5-minute short animated movie, entirely made with Blender and GIMP and other Free/Open Software programs. It has been released as an Open Movie, with all production files and tutorials available on <a href="https://cloud.blender.org/open-movie/monkaa/">Blender Cloud</a> under a CC-BY license, as well as on a DVD available in the <a href="http://www.blender3d.org/e-shop/">Blender Store</a>.</p>
-        </section>
+        </div>
+    </section>
+    
+    <footer>
+        <nav>
+            <ul class="nav-bottom">
+                <li><a href="#watch">Watch</a></li>
+                <li><a href="#listen">Listen</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
 
-        <footer><!-- TODO: Style the footer appropriately. -->
-            <p>This page was created and designed by WEBDEV BEV in 2015. <i>Monkaa</i> was created by <a href="http://www.weybec.com/">Weybec</a> and is used here under a CC-BY license.</p>
-            <nav>
-                <ul class="nav-bottom">
-                    <li><a href="#watch">Watch</a></li>
-                    <li><a href="#listen">Listen</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
-        </footer>
+        <p>This page was created and designed by WEBDEV BEV in 2015.
+            <br><i>Monkaa</i> was created by <a href="http://www.weybec.com/">Weybec</a> and is used here under a CC-BY license.</p>
+    </footer>
 
-    </body>
+</body>
 
 </html>
