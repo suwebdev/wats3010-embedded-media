@@ -1,8 +1,8 @@
-wats1010-embedded-media
+WATS 3010: Embedded Media
 =======================
 
 This is the resource repository for the Embedded Media assignment, part of WATS
-1010: Introduction to Web Development. Please note: **This repository is
+3010: Introduction to Web Development. Please note: **This repository is
 large.**
 
 The goal of this assignment is to explore the features and capabilities
